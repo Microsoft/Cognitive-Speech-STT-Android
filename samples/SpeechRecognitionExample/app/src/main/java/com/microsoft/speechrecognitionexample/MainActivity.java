@@ -80,7 +80,7 @@ public class MainActivity extends Activity implements ISpeechRecognitionServerEv
     }
 
     /**
-     * Gets the LUIS application identifier.
+     * Gets the LUIS application identifier. Need to create a model at luis.ai
      * @return The LUIS application identifier.
      */
     private String getLuisAppId() {
@@ -88,7 +88,7 @@ public class MainActivity extends Activity implements ISpeechRecognitionServerEv
     }
 
     /**
-     * Gets the LUIS primary key from your Azure Deployment
+     * Gets the LUIS primary key from your Azure Deployment of LUIS Cognitive Service
      * @return The LUIS primary key from your Azure Deployment
      */
     private String getLuisPrimaryKey() {
