@@ -48,6 +48,13 @@ To add the client library dependency from Android Studio:
 8. Click `OK` to add the new dependency.
 9. Download the appropriate JNI library `libandroid_platform.so` from [this page](https://github.com/Microsoft/Cognitive-Speech-STT-Android/tree/master/SpeechSDK/libs) and put into your project's directory `app/src/main/jniLibs/armeabi/` or `app/src/main/jniLibs/x86/`.
 
+To add prevention rule from proguard-rules.pro file:
+
+```
+# Microsoft
+-keep class com.microsoft.**{*;}
+```
+
 ## The Sample
 
 This sample demonstrates the following features using a wav file or external microphone input:
